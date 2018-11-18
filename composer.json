@@ -1,0 +1,22 @@
+{
+    "name": "aldemeery/enum-polyfill",
+    "description": "A Polyfill for the SplEnum type in PHP",
+    "type": "snippet",
+    "keywords": ["enum", "splEnum", "enumeration", "splType"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Osama Aldemeery",
+            "email": "aldemeery@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "files": [
+            "SplEnum.php"
+        ]
+    },
+    "require": {
+        "php": "^7.1"
+    }
+}
