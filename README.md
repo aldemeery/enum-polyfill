@@ -1,12 +1,18 @@
 # SplEnum
 
-This is a polyfill for the `SplEnum` type from the [PECL extension](http://pecl.php.net/package/SPL_Types), so you don't have
-to download and install the extension on you server.
+> [!WARNING]
+> PHP 8.1 introduced native Enumerations (Enums), providing a modern, more efficient approach.
+> This package is intended for projects that rely on `SplEnum` and need backward compatibility or cannot upgrade to PHP 8.1+.
+>
+> If possible, consider using PHP's native enums for improved type safety, performance, and maintainability.
 
-SplEnum gives the ability to emulate and create enumeration objects natively in PHP.
+This package is a polyfill for the now-unsupported `SplEnum` class, originally part of the [PECL SPL_Types extension](http://pecl.php.net/package/SPL_Types).
+
+By using this polyfill, you can emulate the `SplEnum` behavior in PHP without relying on the extension, which is no longer actively maintained.
+
+The `SplEnum` class provides a way to create enumeration-like objects natively in PHP, offering a structured and type-safe way to work with predefined constant values.
 
 ## Example
-<small>From the [php.net documentation](http://php.net/manual/en/class.splenum.php#splenum.examples).</small>
 
 ```php
 <?php
@@ -89,6 +95,3 @@ public array SplEnum::getConstList ([ bool $include_default = false ] )
 #### Parameters
 `include_default`
 Whether to include \_\_default property.
-
-## Author
- - Osama Aldemeery <aldemeery@gmail.com>

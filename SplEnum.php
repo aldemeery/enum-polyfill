@@ -3,9 +3,8 @@
 if (!class_exists('SplEnum')) {
 
     /**
-     * A polyfill for the 'splEnum' class.
+     * A polyfill for the 'SplEnum' class.
      *
-     * @see http://php.net/manual/en/class.splenum.php
      * @author Osama Aldemeery <aldemeery@gmail.com>
      */
     abstract class SplEnum
@@ -26,6 +25,7 @@ if (!class_exists('SplEnum')) {
          * splEnum constructor.
          *
          * @param mixed $value The initial value of the enum.
+         *
          * @throws UnexpectedValueException
          */
         public function __construct($value = null)
@@ -42,9 +42,9 @@ if (!class_exists('SplEnum')) {
         /**
          * Get a list of all the constants in the enum
          *
-         * @param  boolean $include_default Whether to include the default value in the list or no.
+         * @param bool $include_default Whether to include the default value in the list or no.
          *
-         * @return array                    The list of constants defined in the enum.
+         * @return array The list of constants defined in the enum.
          */
         public static function getConstList($include_default = false)
         {
